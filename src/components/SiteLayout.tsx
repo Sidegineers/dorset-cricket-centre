@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { phoneLink, phoneNumber } from '../data/dcc'
+import { assetUrl } from '../utils/asset'
 
 export type PageKey = 'home' | 'facilities' | 'bookings' | 'coaching' | 'leagues' | 'venue'
 
@@ -63,7 +64,7 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
           >
             <div className="brand-logo-wrap">
               <img
-                src="/dcc-logo.png"
+                src={assetUrl('dcc-logo.png')}
                 alt="DCC Cricket Ball Logo"
                 className="brand-logo-img"
                 width="38"
@@ -160,7 +161,7 @@ export default function SiteLayout({ children }: SiteLayoutProps) {
           <div className="footer-brand-info">
             <div className="footer-brand-heading">
               <img
-                src="/dcc-logo.png"
+                src={assetUrl('dcc-logo.png')}
                 alt="DCC Logo"
                 className="footer-logo-img"
                 width="28"

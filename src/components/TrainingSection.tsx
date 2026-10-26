@@ -1,5 +1,6 @@
 import ArrowIcon from './ArrowIcon'
 import { phoneLink, phoneNumber } from '../data/dcc'
+import { assetUrl } from '../utils/asset'
 
 export default function TrainingSection() {
   return (
@@ -20,7 +21,7 @@ export default function TrainingSection() {
         <div className="training-media-card">
           <div className="training-photo-wrapper">
             <img
-              src="/images/dcc/Screenshot-2023-03-07-at-15.24.31.png"
+              src={assetUrl('images/dcc/Screenshot-2023-03-07-at-15.24.31.png')}
               alt="Authentic BOLA bowling machine session underway in Dorset Cricket Centre indoor nets"
               className="training-feature-photo"
             />
@@ -40,7 +41,7 @@ export default function TrainingSection() {
         <div className="training-media-card">
           <div className="training-photo-wrapper">
             <img
-              src="/images/dcc/Screenshot-2023-03-07-at-11.02.50.png"
+              src={assetUrl('images/dcc/Screenshot-2023-03-07-at-11.02.50.png')}
               alt="Fast bowler delivering at the crease inside Dorset Cricket Centre indoor nets"
               className="training-feature-photo"
             />

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { facilities, firstFloorAreas } from '../data/dcc'
 import type { FacilityId } from '../data/dcc'
+import { assetUrl } from '../utils/asset'
 
 export type ViewMode = 'arena' | 'mezzanine'
 
@@ -102,7 +103,7 @@ export default function FacilityModelViewer({
         {viewMode === 'arena' ? (
           <div className="arena-plan-wrapper">
             <img
-              src="/images/cricket-lanes-plan.jpg"
+              src={assetUrl('images/cricket-lanes-plan.jpg')}
               alt="Dorset Cricket Centre architectural view of the five indoor cricket nets and bowling lane"
               className="arena-base-image"
               loading="eager"
@@ -176,7 +177,7 @@ export default function FacilityModelViewer({
           <div className="mezzanine-plan-wrapper">
             <div className="mezzanine-image-container">
               <img
-                src="/images/first-floor-plan.jpg"
+                src={assetUrl('images/first-floor-plan.jpg')}
                 alt="First floor plan of Dorset Cricket Centre: Viewing Lounge, Meeting Room, and Reception Office"
                 className="mezzanine-plan-img"
               />

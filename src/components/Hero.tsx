@@ -1,5 +1,6 @@
 import ArrowIcon from './ArrowIcon'
 import { phoneLink, phoneNumber } from '../data/dcc'
+import { assetUrl } from '../utils/asset'
 
 interface HeroProps {
   onExploreClick?: () => void
@@ -11,7 +12,7 @@ export default function Hero({ onExploreClick }: HeroProps) {
       {/* Real DCC Main Hall Photo as the Hero Background */}
       <div className="hero-backdrop-container">
         <img
-          src="/images/dcc/1500x900-main-hall.png"
+          src={assetUrl('images/dcc/1500x900-main-hall.png')}
           alt="Dorset Cricket Centre Main Hall: 5 indoor cricket nets with high-density synthetic turf and ceiling-hung safety netting"
           className="hero-backdrop-img"
           loading="eager"

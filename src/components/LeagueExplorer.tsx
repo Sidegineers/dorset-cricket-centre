@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ArrowIcon from './ArrowIcon'
+import { assetUrl } from '../utils/asset'
 import {
   premierDivisionData,
   divisionOneData,
@@ -114,7 +115,7 @@ export default function LeagueExplorer() {
             <div className="league-editorial-card">
               <div className="editorial-media">
                 <img
-                  src="/images/dcc/Screenshot-2023-03-07-at-15.25.35.png"
+                  src={assetUrl('images/dcc/Screenshot-2023-03-07-at-15.25.35.png')}
                   alt="Dorset Cricket Centre 6-a-side indoor league match in action in the Main Hall"
                   className="league-action-photo"
                 />
