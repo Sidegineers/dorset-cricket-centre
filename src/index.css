@@ -60,6 +60,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
   background-color: var(--bg-canvas);
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -69,6 +70,16 @@ body {
   color: var(--text-primary);
   min-height: 100vh;
   overflow-x: hidden;
+  width: 100%;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
 }
 
 a {
