@@ -91,8 +91,8 @@ export const facilities: Facility[] = [
       { label: 'Netting', value: 'Full-height perimeter mesh' },
     ],
     hotspot: {
-      polygon: '348,735 1465,610 1492,705 362,868',
-      center: { x: 920, y: 720 },
+      polygon: '285,690 1472,690 1478,835 285,835',
+      center: { x: 880, y: 762 },
     },
   },
   {
@@ -118,8 +118,8 @@ export const facilities: Facility[] = [
       { label: 'Netting', value: 'Ceiling-suspended mesh' },
     ],
     hotspot: {
-      polygon: '330,600 1415,475 1465,610 348,735',
-      center: { x: 890, y: 605 },
+      polygon: '285,545 1464,545 1472,690 285,690',
+      center: { x: 878, y: 618 },
     },
   },
   {
@@ -145,8 +145,8 @@ export const facilities: Facility[] = [
       { label: 'Viewing', value: 'Direct from Mezzanine' },
     ],
     hotspot: {
-      polygon: '312,465 1365,345 1415,475 330,600',
-      center: { x: 860, y: 485 },
+      polygon: '285,400 1456,400 1464,545 285,545',
+      center: { x: 875, y: 472 },
     },
   },
   {
@@ -172,8 +172,8 @@ export const facilities: Facility[] = [
       { label: 'Access', value: 'Side aisle walkway' },
     ],
     hotspot: {
-      polygon: '295,335 1320,218 1365,345 312,465',
-      center: { x: 830, y: 360 },
+      polygon: '285,258 1448,258 1456,400 285,400',
+      center: { x: 870, y: 329 },
     },
   },
   {
@@ -199,8 +199,8 @@ export const facilities: Facility[] = [
       { label: 'Netting', value: 'Heavyweight nylon mesh' },
     ],
     hotspot: {
-      polygon: '278,208 1276,92 1320,218 295,335',
-      center: { x: 800, y: 235 },
+      polygon: '285,116 1440,116 1448,258 285,258',
+      center: { x: 865, y: 187 },
     },
   },
   {
@@ -226,8 +226,8 @@ export const facilities: Facility[] = [
       { label: 'Turf', value: 'Cobalt blue specialist surface' },
     ],
     hotspot: {
-      polygon: '38,172 160,165 232,805 86,815',
-      center: { x: 135, y: 500 },
+      polygon: '38,60 187,60 187,805 38,805',
+      center: { x: 112, y: 432 },
     },
   },
 ]

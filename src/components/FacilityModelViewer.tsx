@@ -128,7 +128,6 @@ export default function FacilityModelViewer({
               {facilities.map((fac) => {
                 const isSelected = selectedFacilityId === fac.id
                 const isHovered = hoveredFacilityId === fac.id
-                const isMachineLane = fac.id === 'coaching-lane'
 
                 return (
                   <polygon
@@ -140,18 +139,14 @@ export default function FacilityModelViewer({
                     onMouseLeave={() => setHoveredFacilityId(null)}
                     fill={
                       isSelected
-                        ? isMachineLane
-                          ? 'rgba(0, 47, 81, 0.38)'
-                          : 'rgba(2, 132, 199, 0.32)'
+                        ? 'rgba(2, 132, 199, 0.35)'
                         : isHovered
-                          ? 'rgba(2, 132, 199, 0.16)'
+                          ? 'rgba(2, 132, 199, 0.18)'
                           : 'rgba(0, 0, 0, 0.001)'
                     }
                     stroke={
                       isSelected
-                        ? isMachineLane
-                          ? '#002f51'
-                          : '#005ea6'
+                        ? '#005ea6'
                         : isHovered
                           ? '#0284c7'
                           : 'rgba(255, 255, 255, 0.5)'
