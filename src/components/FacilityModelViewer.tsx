@@ -141,20 +141,20 @@ export default function FacilityModelViewer({
                     fill={
                       isSelected
                         ? isMachineLane
-                          ? 'rgba(37, 99, 235, 0.3)'
-                          : 'rgba(21, 128, 61, 0.28)'
+                          ? 'rgba(0, 47, 81, 0.38)'
+                          : 'rgba(2, 132, 199, 0.32)'
                         : isHovered
-                          ? 'rgba(21, 128, 61, 0.14)'
+                          ? 'rgba(2, 132, 199, 0.16)'
                           : 'rgba(0, 0, 0, 0.001)'
                     }
                     stroke={
                       isSelected
                         ? isMachineLane
-                          ? '#2563eb'
-                          : '#15803d'
+                          ? '#002f51'
+                          : '#005ea6'
                         : isHovered
-                          ? '#16a34a'
-                          : 'rgba(255, 255, 255, 0.4)'
+                          ? '#0284c7'
+                          : 'rgba(255, 255, 255, 0.5)'
                     }
                     strokeWidth={isSelected ? 3 : isHovered ? 2 : 1.5}
                     role="button"
